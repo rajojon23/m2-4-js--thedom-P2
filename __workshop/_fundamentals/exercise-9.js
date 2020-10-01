@@ -9,7 +9,21 @@
 // - To represent a newline character, you can use "\n".
 
 const wrapAfter40Chars = (paragraph) => {
-  // Your code here
+	let char_jump = 40;
+	let new_paragraph = "";
+  // the only soluion without regex
+  for (let i = 0; i < paragraph.length; i += char_jump) {
+	    /* returns the part of the string between the start and end indexes*/
+	    let part = paragraph.substring(i, i + char_jump).concat("", "\n");
+	   	
+	   		if(part[0] == " "){/*remove if there is a space at start of string*/
+	   			part = part.substring(1);
+	   		}
+	    new_paragraph = new_paragraph.concat("", part);
+	    // new_paragraph = new_paragraph+=part;
+	}
+
+	return new_paragraph;
 };
 
 // Part 2 - Test

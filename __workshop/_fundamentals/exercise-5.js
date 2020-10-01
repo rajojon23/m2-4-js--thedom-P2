@@ -9,6 +9,22 @@
 
 const addNumbers = (...nums) => {
   // Insert missing solution please
+
+  let sum = 0;
+  nums.forEach((num) =>{
+  	if(typeof(num) != "number"){
+  		sum+= 0;		
+  	}
+  	else{
+  		sum+= num;	  		
+  	}
+  })
+
+  if(nums.length<=0){
+  	sum = undefined;
+  }
+
+  return sum;
 };
 
 // Part 2 - Test

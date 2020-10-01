@@ -13,6 +13,13 @@
 
 function isPalindrome(theString) {
   // Your code here
+
+  if(theString == theString.split('').reverse().join('')){
+
+	return true;  	
+  };
+
+  return false;
 }
 
 // Part 2 - Test

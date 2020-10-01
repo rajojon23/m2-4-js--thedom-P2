@@ -14,7 +14,16 @@
 // - If the provided key is not any of the objects, return null for that value;
 
 const addValues = (arr, obj) => {
-  // Insert missing solution please
+   let new_arr = [];
+
+  arr.forEach((arr_obj) =>{
+  
+  		new_arr.push({...arr_obj, ...obj});
+
+  	
+  });
+
+  return new_arr;
 };
 
 // Part 2 - Test

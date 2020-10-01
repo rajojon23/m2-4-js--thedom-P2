@@ -67,17 +67,6 @@ racers.forEach(function(frog, index){
 
 racers.forEach(function(racer){
 	racingFrog(racer);
-
-
-	  // if(racer.progress >=100){
-	  	
-	  	
-
-
-
-		  	
-		  	
-	  // }
 });
 
 
@@ -104,7 +93,6 @@ function racingFrog(racer) {
 		  	clearInterval(hop);
 
 		  	positions.push(racer.name);
-		  	console.log(`${positions[0]} WINS`);
 
 		  	let win_banner = document.createElement("div"); 
 		  	win_banner.classList.add('winner');

@@ -10,6 +10,19 @@
 
 const redacted = (arr) => {
   // Insert missing solution please
+   let new_arr = [];
+  arr.forEach((value) =>{
+  	if(typeof(value) == "string"){
+  		new_arr.push("redacted");
+  	}
+  	else{
+  		new_arr.push(value);
+  	}
+  	
+  });
+  
+  return new_arr;
+
 };
 
 // Part 2 - Test

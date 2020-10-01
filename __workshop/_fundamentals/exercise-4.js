@@ -12,6 +12,20 @@
 
 const count = (arr, key) => {
   // Insert missing solution please
+  let total = 0;
+  	arr.forEach((item)=>{
+
+
+  		total += item[key];
+
+  		if(typeof(total) != "number"){
+  			total = 0;
+  		}
+
+  	});
+
+
+  	return total;
 };
 
 // Part 2 - Test

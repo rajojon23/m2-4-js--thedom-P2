@@ -28,6 +28,34 @@
 
 const uniqueElements = (arr1, arr2) => {
   // Your code here
+  let new_arr = [];
+
+  	if(!Array.isArray(arr1) && !Array.isArray(arr2)){
+  		return undefined;
+  	}
+  	else{
+
+
+		arr1.forEach(function(value) {
+
+			if(arr2.indexOf(value) == -1){
+				new_arr.push(value);
+
+			}
+		 
+		});
+		arr2.forEach(function(value) {
+
+			if(arr1.indexOf(value) == -1){
+				new_arr.push(value);
+
+			}
+		 
+		});
+
+	}
+
+  return new_arr;
 };
 
 // Part 2 - Test

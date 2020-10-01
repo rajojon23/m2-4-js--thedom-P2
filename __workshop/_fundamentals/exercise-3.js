@@ -16,6 +16,17 @@
 
 const insert = (arr, obj) => {
   // Insert missing solution please
+   let new_arr = [];
+
+  arr.forEach((arr_obj) =>{
+  
+  		new_arr.push({...arr_obj, ...obj});
+
+  	
+  });
+
+  return new_arr;
+
 };
 
 // Part 2 - Test

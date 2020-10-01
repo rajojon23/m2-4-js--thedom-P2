@@ -11,6 +11,25 @@ test("Exercise 10", () => {
     4,
     5,
   ]);
+  expect(uniqueElements([0, 1], [1, 3, 4, 5])).toStrictEqual([
+    0,
+    3,
+    4,
+    5,
+  ]);
+
+  expect(uniqueElements([0, 1, 3, 4, 5, 6], [1, 3, 4, 5])).toStrictEqual([
+    0,
+    6,
+  ]);
+  expect(uniqueElements([4, 5, 6, 7, 2], [1, 3, 4, 5, 0])).toStrictEqual([
+    6,
+    7,
+    2,
+    1,
+    3,
+    0
+  ]);
   // add more tests here...
 });
 

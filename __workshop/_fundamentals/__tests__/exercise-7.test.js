@@ -17,6 +17,63 @@ test("Exercise 7", () => {
     { name: "liv", age: 36, isAvailable: true },
     { name: "dave", age: 43, isAvailable: true },
   ]);
+
+
+  expect(
+    addValues(
+      [
+        { name: "chris", age: 23 },
+        { name: "liv", age: 36 },
+        { name: "dave", age: 43 },
+        { name: "ferb", age: 12 },
+      ],
+      { isAvailable: true }
+    )
+  ).toStrictEqual([
+    { name: "chris", age: 23, isAvailable: true },
+    { name: "liv", age: 36, isAvailable: true },
+    { name: "dave", age: 43, isAvailable: true },
+    { name: "ferb", age: 12, isAvailable: true },
+  ]);
+
+  expect(
+    addValues(
+      [
+        { name: "chris", age: 23 },
+        { name: "liv", age: 36 },
+        { name: "dave", age: 43 },
+        { name: "ferb", age: 12 },
+        { name: "phineas", age: 12 },
+      ],
+      { isAvailable: true }
+    )
+  ).toStrictEqual([
+    { name: "chris", age: 23, isAvailable: true },
+    { name: "liv", age: 36, isAvailable: true },
+    { name: "dave", age: 43, isAvailable: true },
+    { name: "ferb", age: 12, isAvailable: true },
+    { name: "phineas", age: 12, isAvailable: true },
+  ]);
+
+  expect(
+    addValues(
+      [
+        { name: "chris", age: 23 },
+        { name: "liv", age: 36 },
+        { name: "dave", age: 43 },
+        { name: "ferb", age: 12 },
+        { name: "phineas", age: 12 },
+      ],
+      { isGreat: true }
+    )
+  ).toStrictEqual([
+    { name: "chris", age: 23, isGreat: true },
+    { name: "liv", age: 36, isGreat: true },
+    { name: "dave", age: 43, isGreat: true },
+    { name: "ferb", age: 12, isGreat: true },
+    { name: "phineas", age: 12, isGreat: true },
+  ]);
+
   // add more tests here...
 });
 

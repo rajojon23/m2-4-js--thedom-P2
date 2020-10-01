@@ -7,6 +7,12 @@
 
 const convertToString = (arr) => {
   // Insert missing solution please
+  let new_arr = [];
+  arr.forEach((value) =>{
+  	new_arr.push(value.toString());
+  });
+
+  return new_arr;
 };
 
 // Part 2 - Test
